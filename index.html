@@ -1,221 +1,134 @@
-
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>PORTFOLIO | รัฐประศาสนศาสตร์</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | กัญญาภัค สวัสดี</title>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Kanit',sans-serif;background:#f5f7fb;color:#26344a;line-height:1.8}
+header{background:#102b50;color:white;padding:16px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.logo{font-size:21px;font-weight:600;color:#eac66c}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover{color:#eac66c}
+.hero{background:linear-gradient(135deg,#102b50,#28527c);color:white;text-align:center;padding:65px 20px}
+.profile{width:175px;height:220px;object-fit:cover;border:5px solid #eac66c;border-radius:20px;margin-bottom:18px;box-shadow:0 8px 25px #0004}
+.hero h1{font-size:32px;color:#f2d58c}
+.hero p{margin-top:8px}
+.btn{display:inline-block;margin-top:20px;padding:10px 25px;background:#eac66c;color:#102b50;text-decoration:none;border-radius:25px;font-weight:600}
+section{max-width:1050px;margin:35px auto;padding:30px;background:white;border-radius:18px;box-shadow:0 5px 20px #102b5010}
+h2{color:#173c65;border-left:5px solid #eac66c;padding-left:13px;margin-bottom:20px}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.info div,.skill{background:#f2f6fb;padding:15px;border-radius:12px}
+.info b{color:#173c65}
+.skills,.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
+.skill{text-align:center;border-bottom:3px solid #eac66c}
+.card{background:#f7f9fc;padding:18px;border-radius:13px;border-left:4px solid #d5ad50;margin-bottom:14px}
+.card h3{color:#173c65;font-size:18px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px;background:#e9edf3}
+.caption{text-align:center;font-size:14px;margin-top:7px}
+footer{background:#102b50;color:white;text-align:center;padding:25px;margin-top:40px}
+@media(max-width:600px){header{justify-content:center}nav{justify-content:center}.hero h1{font-size:25px}section{margin:18px 12px;padding:20px}}
+</style>
 </head>
-
 <body>
 
-<!-- NAVBAR -->
 <header>
-    <nav>
-        <div class="logo">MY PORTFOLIO</div>
-
-        <div class="menu">
-            <a href="#home">หน้าหลัก</a>
-            <a href="#person1">คนที่ 1</a>
-            <a href="#person2">คนที่ 2</a>
-        </div>
-    </nav>
+<div class="logo">MY PORTFOLIO</div>
+<nav>
+<a href="#home">หน้าแรก</a>
+<a href="#about">ประวัติส่วนตัว</a>
+<a href="#education">การศึกษา</a>
+<a href="#skills">ทักษะ</a>
+<a href="#activities">กิจกรรม</a>
+<a href="#awards">เกียรติบัตร</a>
+</nav>
 </header>
 
-<!-- HOME -->
-<section class="hero" id="home">
+<div class="hero" id="home">
+<img src="images/profile.jpg" class="profile" alt="รูปโปรไฟล์">
+<h1>นางสาวกัญญาภัค สวัสดี</h1>
+<p>PORTFOLIO | แฟ้มสะสมผลงาน</p>
+<p>สาขาวิชารัฐประศาสนศาสตร์</p>
+<a href="#about" class="btn">เข้าสู่แฟ้มสะสมผลงาน</a>
+</div>
 
-    <div class="hero-content">
-
-        <p class="welcome">WELCOME TO OUR PORTFOLIO</p>
-
-        <h1>แฟ้มสะสมผลงาน</h1>
-
-        <div class="line"></div>
-
-        <h2>คณะมนุษยศาสตร์และสังคมศาสตร์</h2>
-
-        <h3>สาขาวิชารัฐประศาสนศาสตร์</h3>
-
-        <p class="school">
-            โรงเรียนทุ่งใหญ่เฉลิมราชอนุสรณ์รัชมังคลาภิเษก
-        </p>
-
-        <a href="#person1" class="button">
-            เข้าชมแฟ้มสะสมผลงาน
-        </a>
-
-    </div>
-
+<section id="about">
+<h2>ประวัติส่วนตัว</h2>
+<div class="info">
+<div><b>ชื่อ-นามสกุล</b><br>นางสาวกัญญาภัค สวัสดี</div>
+<div><b>ระดับการศึกษา</b><br>ชั้นมัธยมศึกษาปีที่ 6</div>
+<div><b>แผนการเรียน</b><br>ศิลป์-คำนวณ</div>
+<div><b>สถานศึกษา</b><br>โรงเรียนทุ่งใหญ่เฉลิมราชอนุสรณ์รัชมังคลาภิเษก</div>
+</div>
+<p style="margin-top:20px">ดิฉันเป็นผู้ที่มีความสนใจในการทำงานร่วมกับผู้อื่น มีความรับผิดชอบ กล้าแสดงออก และพร้อมเรียนรู้สิ่งใหม่ ๆ โดยมุ่งมั่นพัฒนาตนเองทั้งด้านความรู้ ความคิดสร้างสรรค์ และการเป็นผู้นำ</p>
 </section>
 
-<!-- PERSON 1 -->
-<section class="profile-section" id="person1">
-
-    <div class="section-title">
-        <p>PROFILE 01</p>
-        <h1>ประวัติส่วนตัว</h1>
-        <div class="line"></div>
-    </div>
-
-    <div class="profile-card">
-
-        <div class="photo">
-         <img src="NKW_2080.jpeg">
-                 alt="นางสาวกัญญภัค สวัสดี">
-        </div>
-
-        <div class="information">
-
-            <span class="number">STUDENT 01</span>
-
-            <h2>นางสาวกัญญภัค สวัสดี</h2>
-
-            <div class="tag">แผนการเรียนศิลป์-คำนวณ</div>
-
-            <h3>ประวัติการศึกษา</h3>
-
-            <p>
-                กำลังศึกษาชั้นมัธยมศึกษาปีที่ 6
-                <br>
-                โรงเรียนทุ่งใหญ่เฉลิมราชอนุสรณ์รัชมังคลาภิเษก
-            </p>
-
-            <p>
-                ศึกษาต่อระดับมหาวิทยาลัย
-                <br>
-                มหาวิทยาลัยราชภัฏสุราษฎร์ธานี
-                <br>
-                คณะมนุษยศาสตร์และสังคมศาสตร์
-                <br>
-                สาขาวิชารัฐประศาสนศาสตร์
-            </p>
-
-            <h3>ความสามารถ</h3>
-
-            <ul>
-                <li>การถ่ายภาพ</li>
-                <li>การรำมโนราห์</li>
-            </ul>
-
-            <h3>ทักษะ</h3>
-
-            <ul>
-                <li>ทักษะความเป็นผู้นำ</li>
-                <li>ทักษะความคิดสร้างสรรค์</li>
-            </ul>
-
-            <h3>กิจกรรมที่เข้าร่วม</h3>
-
-            <ul>
-                <li>ได้รับพระราชทานหมวกและผ้าพันคอจิตอาสาพระราชทาน</li>
-                <li>เข้าร่วมพิธีแสดงตนเป็นพุทธมามกะ</li>
-                <li>เป็นบุคคลที่ช่วยดำเนินงานกิจกรรมทอดกฐินสามัคคี ณ วัดสระบัว</li>
-            </ul>
-
-            <h3>เกียรติบัตรและผลงาน</h3>
-
-            <ul>
-                <li>
-                    ได้รับรางวัลรองชนะเลิศอันดับ 1
-                    ในกิจกรรมแฟนพันธุ์แท้อาเซียน
-                    ระดับชั้นมัธยมศึกษาตอนปลาย
-                </li>
-            </ul>
-
-        </div>
-    </div>
-
+<section id="education">
+<h2>ประวัติการศึกษา</h2>
+<div class="card">
+<h3>ระดับมัธยมศึกษาตอนปลาย</h3>
+<p>โรงเรียนทุ่งใหญ่เฉลิมราชอนุสรณ์รัชมังคลาภิเษก</p>
+<p>แผนการเรียนศิลป์-คำนวณ</p>
+</div>
+<div class="card">
+<h3>เป้าหมายการศึกษาต่อ</h3>
+<p>มหาวิทยาลัยราชภัฏสุราษฎร์ธานี</p>
+<p>คณะมนุษยศาสตร์และสังคมศาสตร์</p>
+<p>สาขาวิชารัฐประศาสนศาสตร์</p>
+</div>
 </section>
 
-<!-- PERSON 2 -->
-<section class="profile-section bg-light" id="person2">
-
-    <div class="section-title">
-        <p>PROFILE 02</p>
-        <h1>ประวัติส่วนตัว</h1>
-        <div class="line"></div>
-    </div>
-
-    <div class="profile-card">
-
-        <div class="photo">
-           <img src="IMG_1199.jpeg">
-                 alt="นางสาวฐิติยา เสนธะระนารถ">
-        </div>
-
-        <div class="information">
-
-            <span class="number">STUDENT 02</span>
-
-            <h2>นางสาวฐิติยา เสนธะระนารถ</h2>
-
-            <div class="tag">แผนการเรียนศิลป์-คำนวณ</div>
-
-            <h3>ประวัติการศึกษา</h3>
-
-            <p>
-                กำลังศึกษาชั้นมัธยมศึกษาปีที่ 6
-                <br>
-                โรงเรียนทุ่งใหญ่เฉลิมราชอนุสรณ์รัชมังคลาภิเษก
-            </p>
-
-            <p>
-                ศึกษาต่อระดับมหาวิทยาลัย
-                <br>
-                มหาวิทยาลัยราชภัฏสุราษฎร์ธานี
-                <br>
-                คณะมนุษยศาสตร์และสังคมศาสตร์
-                <br>
-                สาขาวิชารัฐประศาสนศาสตร์
-            </p>
-
-            <h3>ความสามารถ</h3>
-
-            <ul>
-                <li>การถ่ายภาพ</li>
-                <li>กิจกรรมสันทนาการ</li>
-            </ul>
-
-            <h3>ทักษะ</h3>
-
-            <ul>
-                <li>ทักษะความเป็นผู้นำ</li>
-                <li>ทักษะความคิดสร้างสรรค์</li>
-            </ul>
-
-            <h3>กิจกรรมที่เข้าร่วม</h3>
-
-            <ul>
-                <li>เข้าร่วมกิจกรรมเข้าค่ายสภานักเรียน</li>
-                <li>เข้าร่วมกิจกรรมทำบุญประจำวันพระ ณ วัดขนาน</li>
-            </ul>
-
-        </div>
-    </div>
-
+<section id="skills">
+<h2>ทักษะและความสามารถ</h2>
+<div class="skills">
+<div class="skill">ภาวะความเป็นผู้นำ</div>
+<div class="skill">ความคิดสร้างสรรค์</div>
+<div class="skill">การรำมโนราห์</div>
+<div class="skill">การถ่ายภาพ</div>
+</div>
 </section>
 
-<!-- FOOTER -->
+<section id="activities">
+<h2>กิจกรรมที่เข้าร่วม</h2>
+<div class="card">
+<h3>01 การเลือกตั้งสภานักเรียน</h3>
+<p>ได้รับการเลือกตั้งให้เป็นสมาชิกสภานักเรียน เป็นโอกาสในการเรียนรู้การทำงานร่วมกับผู้อื่นและการมีส่วนร่วมในกิจกรรมของโรงเรียน</p>
+</div>
+<div class="card">
+<h3>02 กิจกรรมค่ายสภานักเรียน</h3>
+<p>เข้าร่วมกิจกรรมค่ายสภานักเรียน เพื่อพัฒนาทักษะความเป็นผู้นำ การทำงานเป็นทีม และการอยู่ร่วมกับผู้อื่น</p>
+</div>
+<div class="card">
+<h3>03 กรรมการฝ่ายระเบียบวินัย</h3>
+<p>ได้รับมอบหมายให้ปฏิบัติหน้าที่กรรมการฝ่ายระเบียบวินัย ฝึกความรับผิดชอบ ความมีวินัย และการปฏิบัติงานตามหน้าที่</p>
+</div>
+<div class="card">
+<h3>04 กิจกรรมทอดกฐินสามัคคี</h3>
+<p>เป็นส่วนหนึ่งในการช่วยดำเนินงานกิจกรรมทอดกฐินสามัคคี ฝึกการประสานงาน การช่วยเหลือส่วนรวม และการทำงานร่วมกับชุมชน</p>
+</div>
+</section>
+
+<section id="awards">
+<h2>เกียรติบัตรและความภาคภูมิใจ</h2>
+<div class="card">
+<h3>เกียรติบัตรเด็กดีศรีรัชมังคลาภิเษก</h3>
+<p>ได้รับเกียรติบัตรเพื่อแสดงถึงความประพฤติที่ดีและการเป็นแบบอย่างที่เหมาะสม</p>
+</div>
+<div class="gallery">
+<div>
+<img src="images/certificate1.jpg" alt="เกียรติบัตรเด็กดีศรีรัชมังคลาภิเษก">
+<p class="caption">เกียรติบัตรเด็กดีศรีรัชมังคลาภิเษก</p>
+</div>
+</div>
+</section>
+
 <footer>
-
-    <h2>THANK YOU</h2>
-
-    <p>
-        ขอบคุณที่เข้ามาเยี่ยมชมแฟ้มสะสมผลงานของพวกเรา
-    </p>
-
-    <div class="footer-line"></div>
-
-    <p class="footer-small">
-        PORTFOLIO | PUBLIC ADMINISTRATION
-    </p>
-
+<p>PORTFOLIO | นางสาวกัญญาภัค สวัสดี</p>
+<p>มหาวิทยาลัยราชภัฏสุราษฎร์ธานี</p>
 </footer>
 
 </body>
